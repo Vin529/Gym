@@ -5,23 +5,34 @@
         <meta name="viewport" content="width=device-width, initial-scale=1">
         <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.4.1/css/bootstrap.min.css">
         <link rel="stylesheet" href="indexStyle.css">
-        <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.6.4/jquery.min.js"></script>
-        <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.4.1/js/bootstrap.min.js"></script>
-        <script src="clientScript.js"></script>
     </head>
 
     <body>
         <div class="jumbotron">
-            <h1 class="display-4">Wourkout Overview</h1>
+            <h1 class="display-4">Workout Overview</h1>
             <p class="lead">View past workouts, edit details and add new entries with this page</p>
         </div>
 
         <div class="container">
-            <div>
+            <div id="workoutDiv">
+                <select id="workoutList" class="form-select">
+                    <option selected>Select workout</option>
+                </select>
+            </div>
+
+            <div id="exerciseDiv">
+                <button id="submitExercise">Submit</button>
+                <div class="form-group">
+                    <label for="exerciseName">Exercise name</label>
+                    <input type="text" class="form-control" id="exerciseName" placeholder="Type exercise name or select from list below">
+                </div>
                 <button id="exerciseSelectButton">Workouts</button>
                 <div id="selectionBox">
-
+                    <p>exercises will appear here</p>
                 </div>
             </div>
         </div>
+        <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.6.4/jquery.min.js"></script>
+        <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.4.1/js/bootstrap.min.js"></script>
+        <script src="indexScript.js"></script>
     </body>

@@ -1,0 +1,16 @@
+#selectionBox {
+    
+}
+
+.exerciseButton {
+    margin: 20px;
+    color: brown;
+}
+
+#workoutDiv {
+    background-color: aquamarine;
+}
+
+#exerciseDiv {
+    background-color: chocolate;
+}
